@@ -1,0 +1,15 @@
+{
+  "name": "apetorch",
+  "version": "1.0.0",
+  "description": "A crude deep learning library for smart contracts.",
+  "repository": "https://github.com/sirmammingtonham/ApeTorch.git",
+  "author": "Ethan Joseph <ethanj217@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.9.2"
+  },
+  "dependencies": {
+    "prb-math": "^2.4.3",
+    "solmate": "https://github.com/NTA-Capital/SolMATe.git"
+  }
+}
