@@ -6,10 +6,10 @@
   "author": "Ethan Joseph <ethanj217@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
     "hardhat": "^2.9.2"
   },
   "dependencies": {
-    "prb-math": "^2.4.3",
-    "solmate": "https://github.com/NTA-Capital/SolMATe.git"
+    "chai": "^4.3.6"
   }
 }
