@@ -22,14 +22,19 @@ library ApeTorch {
         public
         pure
         returns (int128[][][] memory)
-    {}
+    {
+        int128[][][] memory input_neg = input.rsub(0); // 0 - input
+        int128[][][] memory numerator = input.exp().sub(input_neg.exp());
+        int128[][][] memory denominator = input.exp().add(input_neg.exp());
+        return numerator.div(denominator);
+    }
 
     function relu(int128[][][] memory input)
         public
         pure
         returns (int128[][][] memory)
     {
-        // int128[][][] memory result = _createMatrix(input);
+        return input.max(0);
     }
 
     function dropout(int128[][][] memory input)
